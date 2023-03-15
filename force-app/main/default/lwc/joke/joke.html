@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Random Joke">
+        <template if:true={joke}>
+            <p>{joke.setup}</p>
+            <p>{joke.punchline}</p>
+        </template>
+        <template if:false={joke}>
+            <p>Loading...</p>
+        </template>
+    </lightning-card>
+</template>
